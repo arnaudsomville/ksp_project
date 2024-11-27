@@ -1,7 +1,7 @@
 [project]
 requires-python = ">=3.11" 
-name = "my_project"
-description = "Default template for PDM package"
+name = "ksp_project"
+description = "Project used to control the spacecraft for KSP Mun project"
 authors = [
     { name = 'Arnaud Somville', email = 'arnaud.somville@estaca.eu' },
     {name = "Arnaud SOMVILLE", email = "arnaud.somville@estaca.eu"},
@@ -9,6 +9,7 @@ authors = [
 version = "0.1.0"
 dependencies = [
     "pydantic>=2.6.4",
+    "krpc>=0.5.4",
 ]
 readme = "README.md"
 license = {text = "MIT"}
@@ -21,7 +22,7 @@ dev = [
     "ruff>=0.3.3",
     "mypy>=1.9.0",
     "pre-commit>=3.7.0",
-    "pdm==2.12.4",
+    "pdm==2.20.1",
 ]
 test = [
     "pytest>=7.4.3",
